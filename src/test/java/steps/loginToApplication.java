@@ -4,7 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 import pages.LoginPage;
+import utils.driverInitiate;
 
 public class loginToApplication {
 
@@ -32,6 +34,6 @@ public class loginToApplication {
 
     @Then("^page title \"([^\"]*)\" is displayed$")
     public void page_title_something_is_displayed(String pagetitle)  {
-
+        loginPage.validate_Page_Title(pagetitle);
     }
 }

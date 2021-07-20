@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import utils.driverInitiate;
 
@@ -31,4 +32,9 @@ public class LoginPage extends driverInitiate {
         find(login_Button).click();
     }
 
+    public void validate_Page_Title(String expectedTitle)
+    {
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals(pageTitle,expectedTitle);
+    }
 }

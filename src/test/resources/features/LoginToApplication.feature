@@ -7,4 +7,4 @@ Feature: Login Scenario
   Scenario: 1- user is able to login to the page
     When user entered username "Admin" password "password"
     And user click "login" button
-    Then page title "Login - Execute Automation Employee App" is displayed
+    Then page title "Home - Execute Automation Employee App" is displayed
