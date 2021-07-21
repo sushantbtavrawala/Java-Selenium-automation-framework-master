@@ -26,8 +26,8 @@ public class loginToApplication {
         loginPage.enter_Username_Password(username, password);
     }
 
-    @And("^user click \"([^\"]*)\" button$")
-    public void user_click_something_button(String login) throws Throwable {
+    @And("^user click login button$")
+    public void user_click_login_button() throws Throwable {
         loginPage.click_Login_Button();
     }
 
