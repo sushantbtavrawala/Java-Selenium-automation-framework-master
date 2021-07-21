@@ -1,7 +1,8 @@
 package pages;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import utils.driverInitiate;
 
 import java.io.IOException;
