@@ -1,8 +1,8 @@
 package pages;
 
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import utils.driverInitiate;
 
 import java.io.IOException;
@@ -13,9 +13,11 @@ public class LoginPage extends driverInitiate {
     private static By enter_Username = By.id("UserName");
     private static By enter_Password = By.id("Password");
     private static By login_Button = By.cssSelector(".btn-default");
+    private static By logoff_Link = By.linkText("Log off");
 
     public void open_Browser(String url) throws IOException
-    {        driver.get(url);    }
+    {   driver.get(url);
+    }
 
     public void click_Login_Link()
     {
@@ -37,5 +39,10 @@ public class LoginPage extends driverInitiate {
     {
         String pageTitle = driver.getTitle();
         Assert.assertEquals(pageTitle,expectedTitle);
+    }
+
+    public void click_LogOffLink()
+    {
+        find(logoff_Link).click();
     }
 }

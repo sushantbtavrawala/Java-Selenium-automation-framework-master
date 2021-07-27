@@ -1,5 +1,6 @@
 package utils;
 
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,13 +14,13 @@ public abstract class driverInitiate {
     static {
         try {
             driver = getDriver();
-        } catch (IOException e) {
+        } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
 
     // Returns driver if instatiated, if not sets driver then returns it
-    public static WebDriver getDriver() throws IOException {
+    public static WebDriver getDriver() throws IOException, ParseException {
         if (driver == null) {
             driver = browserFactory.apply();
         }

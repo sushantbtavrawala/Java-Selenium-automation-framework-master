@@ -1,27 +1,25 @@
 package utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class browserFactory {
+public class browserFactory  {
 
-    //public WebDriver driver;
-    protected static WebDriver apply() throws IOException {
+    protected static WebDriver apply() throws IOException, ParseException {
 
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("src/test/resources/property/testData.properties");
+        FileInputStream fis = new FileInputStream("src/test/resources/property/config.properties");
 
         //Read user input from property file
         prop.load(fis);
+
         String browserName = prop.getProperty("browser");
 
         if (browserName.equalsIgnoreCase("")) {
@@ -38,5 +36,8 @@ public class browserFactory {
             return new ChromeDriver();
         }
         return null;
+    }
+
+    public browserFactory() throws IOException, ParseException {
     }
 }

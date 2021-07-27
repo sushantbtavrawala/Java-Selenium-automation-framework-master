@@ -35,4 +35,9 @@ public class loginToApplication {
     public void page_title_something_is_displayed(String pagetitle)  {
         loginPage.validate_Page_Title(pagetitle);
     }
+
+    @And("^user click on log off$")
+    public void user_click_on_log_off() throws Throwable {
+        loginPage.click_LogOffLink();
+    }
 }

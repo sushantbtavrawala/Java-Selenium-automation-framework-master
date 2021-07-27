@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import java.util.Map;
 import pages.Employee;
 
-public class employee {
+public class createemployee {
 
     Employee employee = new Employee();
 
