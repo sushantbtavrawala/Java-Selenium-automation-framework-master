@@ -1,0 +1,477 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1235000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigate to the url \"http://eaapp.somee.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://eaapp.somee.com/",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.loginToApplication.user_navigate_to_the_url_something(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the login page",
+            "match": {
+              "location": "steps.loginToApplication.user_navigate_to_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user entered username \"Admin\" password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 23
+                },
+                {
+                  "val": "password",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.loginToApplication.user_entered_username_something_password_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 739000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click login button",
+            "match": {
+              "location": "steps.loginToApplication.user_click_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T13:35:37.304Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3127000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.hooks.startup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "01- verify user logged in successfully",
+        "description": "",
+        "id": "login-scenario;01--verify-user-logged-in-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "page title \"Home - Execute Automation Employee App\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Home - Execute Automation Employee App",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.loginToApplication.page_title_something_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 605000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on log off",
+            "match": {
+              "location": "steps.loginToApplication.user_click_on_log_off()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 414000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigate to the url \"http://eaapp.somee.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://eaapp.somee.com/",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.loginToApplication.user_navigate_to_the_url_something(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 485000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the login page",
+            "match": {
+              "location": "steps.loginToApplication.user_navigate_to_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user entered username \"Admin\" password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 23
+                },
+                {
+                  "val": "password",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.loginToApplication.user_entered_username_something_password_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 689000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click login button",
+            "match": {
+              "location": "steps.loginToApplication.user_click_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T13:35:43.911Z",
+        "before": [
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.hooks.startup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "03- user search for employee",
+        "description": "",
+        "id": "login-scenario;03--user-search-for-employee",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 951000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user navigate to the Employee list page",
+            "match": {
+              "location": "steps.employeelist.user_navigate_to_the_employee_list_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user enter \"sbt25\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sbt25",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.employeelist.user_enter_something_in_the_search_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 693000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user click Search button",
+            "match": {
+              "location": "steps.employeelist.user_click_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I validate the name contains \"sbt25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sbt25\"",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.employeelist.i_validate_the_name_contains(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 628000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user click on log off",
+            "match": {
+              "location": "steps.loginToApplication.user_click_on_log_off()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login Scenario",
+    "description": "",
+    "id": "login-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginToApplication.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 420000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigate to the url \"http://eaapp.somee.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://eaapp.somee.com/",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.loginToApplication.user_navigate_to_the_url_something(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the login page",
+            "match": {
+              "location": "steps.loginToApplication.user_navigate_to_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user entered username \"Admin\" password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 23
+                },
+                {
+                  "val": "password",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.loginToApplication.user_entered_username_something_password_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 719000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click login button",
+            "match": {
+              "location": "steps.loginToApplication.user_click_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T13:35:48.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.hooks.startup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "01- verify Homepage accessibility",
+        "description": "",
+        "id": "accesibility-scenario;01--verify-homepage-accessibility",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Found 6 accessibility violations:\r\n1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application\u003daxeAPI\r\n  a) [\".btn-primary.btn-lg[href$\u003d\\\"executeautomation.com\\\"]\"]\r\n    Fix any of the following:\r\n      Element has insufficient color contrast of 3.63 (foreground color: #ffffff, background color: #428bca, font size: 13.5pt, font weight: normal). Expected contrast ratio of 4.5:1\r\n\r\n\r\n  b) [\".btn-primary.btn-lg.btn:nth-child(1)\"]\r\n    Fix any of the following:\r\n      Element has insufficient color contrast of 3.63 (foreground color: #ffffff, background color: #428bca, font size: 13.5pt, font weight: normal). Expected contrast ratio of 4.5:1\r\n\r\n\r\n  c) [\".btn-primary.btn-lg.btn:nth-child(2)\"]\r\n    Fix any of the following:\r\n      Element has insufficient color contrast of 3.63 (foreground color: #ffffff, background color: #428bca, font size: 13.5pt, font weight: normal). Expected contrast ratio of 4.5:1\r\n\r\n\r\n2) \u003chtml\u003e element must have a lang attribute: https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application\u003daxeAPI\r\n  a) [\"html\"]\r\n    Fix any of the following:\r\n      The \u003chtml\u003e element does not have a lang attribute\r\n\r\n\r\n3) Images must have alternate text: https://dequeuniversity.com/rules/axe/3.1/image-alt?application\u003daxeAPI\r\n  a) [\"img\"]\r\n    Fix any of the following:\r\n      Element does not have an alt attribute\r\n      aria-label attribute does not exist or is empty\r\n      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\r\n      Element has no title attribute or the title attribute is empty\r\n      Element\u0027s default semantics were not overridden with role\u003d\"presentation\"\r\n      Element\u0027s default semantics were not overridden with role\u003d\"none\"\r\n\r\n\r\n4) Page must have one main landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application\u003daxeAPI\r\n  a) [\"html\"]\r\n    Fix all of the following:\r\n      Page does not have a main landmark\r\n\r\n\r\n5) Page must contain a level-one heading: https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application\u003daxeAPI\r\n  a) [\"html\"]\r\n    Fix all of the following:\r\n      Page must have a level-one heading\r\n\r\n\r\n6) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application\u003daxeAPI\r\n  a) [\"html\"]\r\n    Fix any of the following:\r\n      Some page content is not contained by landmarks\r\n\r\n\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat utils.Accessibility.accessibilityViolationTest(Accessibility.java:31)\r\n\tat steps.accesibility.user_complete_accessibility_test_on_page(accesibility.java:26)\r\n\tat ✽.user validate accessibility test on \"home\" page(file:///C:/Users/User/Desktop/javaSelenium/ecommerce-automation-framework-master/src/test/resources/features/accessibility.feature:11)\r\n",
+              "duration": 1003000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "user validate accessibility test on \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"home\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.accesibility.user_complete_accessibility_test_on_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Accesibility Scenario",
+    "description": "",
+    "id": "accesibility-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/accessibility.feature",
+    "tags": []
+  }
+]

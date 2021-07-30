@@ -45,4 +45,9 @@ public class LoginPage extends driverInitiate {
     {
         find(logoff_Link).click();
     }
+
+    public void close_Browser()
+    {
+        driver.close();
+    }
 }

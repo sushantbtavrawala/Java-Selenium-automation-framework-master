@@ -6,6 +6,7 @@ Feature: Login Scenario
     When user entered username "Admin" password "password"
     And user click login button
 
+  @smoke
   Scenario:01- verify user logged in successfully
     Then page title "Home - Execute Automation Employee App" is displayed
     And user click on log off
@@ -19,9 +20,10 @@ Feature: Login Scenario
     Then user click Create button
     And user click on log off
 
+  @smoke
   Scenario:03- user search for employee
     When user navigate to the Employee list page
-    And user enter "sbt" in the search box
+    And user enter "sbt25" in the search box
     And user click Search button
-    Then I validate the name contains "sbt"
+    Then I validate the name contains "sbt25"
     And user click on log off

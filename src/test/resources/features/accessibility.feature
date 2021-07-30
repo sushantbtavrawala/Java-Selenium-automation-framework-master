@@ -6,8 +6,19 @@ Feature: Accesibility Scenario
     When user entered username "Admin" password "password"
     And user click login button
 
+  @smoke
   Scenario:01- verify Homepage accessibility
-    Then user validate accessibility test on "home" page
+    Then user navigate to the "home" page
+    And user validate "home" page against accessibility violation rules
+    And user validate footer links
+    And user validate page tilte
+    And user validate page for any broken link
+    And user click on log off
 
   Scenario:02- verify Employee List page accessibility
-    Then user validate accessibility test on "employee list" page
+    Then user navigate to the "employee list" page
+    And user validate "employee list" page against accessibility violation rules
+    And user validate footer links
+    And user validate page tilte
+    And user validate page for any broken link
+    And user click on log off
