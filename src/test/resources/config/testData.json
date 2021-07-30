@@ -1,0 +1,13 @@
+{
+  "MySettings": {
+    "browser": "Chrome",
+    "Website": "http://eaapp.somee.com/",
+
+    "Users": {
+      "admin": "admin",
+      "standarUser": "standardUser",
+
+      "password": "password"
+    }
+  }
+  }

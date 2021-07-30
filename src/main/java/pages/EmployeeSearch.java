@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.driverInitiate;
 import java.util.List;
-import java.util.Locale;
 
 public class EmployeeSearch extends driverInitiate {
 
@@ -22,8 +21,8 @@ public class EmployeeSearch extends driverInitiate {
             String customXpath = beforeXpathName+i+afterXpathName;
 
             WebElement element =  find(By.xpath(customXpath));
-            Assert.assertEquals(name,element.getText().toLowerCase(Locale.ROOT));
-            System.out.println(element.getText() + " is found at position :"+ (i-1));
+            Assert.assertTrue(name,element.getText().equalsIgnoreCase(name));
+            System.out.println(element.getText() + " is found at position :" + (i - 1));
         }
     }
 }

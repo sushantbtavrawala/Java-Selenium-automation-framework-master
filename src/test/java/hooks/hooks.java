@@ -1,4 +1,4 @@
-package steps;
+package hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -6,14 +6,16 @@ import utils.driverInitiate;
 
 public class hooks extends driverInitiate {
 
-   @Before(order = 1)
-    public void startup() {
+    @Before
+   public void startup() {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
     }
 
-    @After(order =2)
+    @After
     public void afterScenario() {
-      driver.close();
+     if(driver == null) {
+         driver.close();
+     }
     }
 }

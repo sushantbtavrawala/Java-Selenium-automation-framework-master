@@ -1,5 +1,6 @@
 package utils;
 
+import com.google.gson.stream.JsonReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
@@ -12,10 +13,13 @@ import java.util.Properties;
 
 public class browserFactory  {
 
+
+
     protected static WebDriver apply() throws IOException, ParseException {
 
+
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("src/test/resources/property/config.properties");
+        FileInputStream fis = new FileInputStream("src/test/resources/config/config.properties");
 
         //Read user input from property file
         prop.load(fis);
